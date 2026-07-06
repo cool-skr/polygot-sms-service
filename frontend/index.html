@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyglot SMS Service</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📩 Polyglot SMS Service</h1>
+
+    <p class="subtitle">
+        Spring Boot • Kafka • Go • Redis • MongoDB
+    </p>
+
+    <form id="smsForm">
+
+        <label>User ID</label>
+        <input
+            type="text"
+            id="userId"
+            placeholder="Enter user ID"
+            required
+        >
+
+        <label>Phone Number</label>
+        <input
+            type="text"
+            id="phoneNumber"
+            placeholder="9876543210"
+            required
+        >
+
+        <label>Message</label>
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Enter your SMS..."
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send SMS
+        </button>
+
+    </form>
+
+    <div id="response" class="response"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
